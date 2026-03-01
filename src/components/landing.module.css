@@ -1,0 +1,160 @@
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header h1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(15, 122, 210);
+}
+.header h1 img {
+    width: 32px;
+
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h2 {
+    font-size: 60px;
+    margin: 10px 0;
+
+}
+.hero h2 span {
+    color: rgb(15, 122, 210);
+}
+.whatis {
+    background-color: rgb(237, 241, 246);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: rgb(66, 68, 71);
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.description {
+    font-weight: 500;
+    color: rgb(78, 80, 83);
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+.main {
+    margin-top: 100px;
+}
+.getStarted {
+    background-color: rgb(15, 122, 210);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding:  10px 15px;
+    margin: 30px;
+    font-size: 19px;
+}
+.getStarted img {
+    width: 25px;
+}
+.heroImg {
+    max-width: 750px;
+    margin: 20px;
+}
+
+.benefits {
+    margin-top: 30px;
+    padding: 60px 30px;
+    background-color: rgb(237, 241, 246);
+}
+.benefits h2 {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.benefitsIntro {
+    text-align: center;
+    font-size: 18px;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    color: rgb(83, 86, 90);
+}
+.benefitsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+.benefitCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid rgb(220, 226, 233);
+}
+.benefitCard img {
+    background-color: rgb(237, 241, 246);
+    border-radius: 10px;
+    padding: 7px;
+}
+.benefitCard p {
+    color: rgb(78, 80, 83);
+}
+.features {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 30px;
+    justify-content: center;
+    gap: 30px;
+}
+.featuresList {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.featuresImg {
+    max-width: 40%;
+}
+.featuresList h2 {
+    font-size: 30px;
+}
+.featuresList h2 span {
+    color: rgb(15, 122, 210);
+}
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.feature img {
+    background-color: rgba(188, 251, 214, 0.499);
+    padding: 3px;
+    border-radius: 100%;
+    width: 34px;
+}
+.feature h3 {
+    margin-bottom: 7px;
+}
+.feature p {
+    color: rgb(78, 80, 83);
+}
