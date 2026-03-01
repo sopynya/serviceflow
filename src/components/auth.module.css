@@ -1,0 +1,61 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(237, 241, 246);
+    gap: 60px;
+}
+.page img {
+    max-width: 500px;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(217, 224, 232);
+    min-width: 500px;
+}
+.container h1 {
+    margin-bottom: 5px;
+    color: rgb(46, 53, 61);
+}
+.container p {
+    color: rgb(89, 91, 94);
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+.container form label {
+    margin: 20px 0 5px 0;
+    color: black ;
+}
+.container form input {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 189, 197);
+}
+.container form button {
+    background-color: rgb(40, 131, 228);
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.container p a {
+    color: rgb(65, 115, 231);
+    text-decoration: underline;
+}
+.link {
+    text-align: center;
+}
+.error {
+    text-align: center;
+    color: rgb(188, 36, 36) !important;
+    margin-bottom: 10px;
+}

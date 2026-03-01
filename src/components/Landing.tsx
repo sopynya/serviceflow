@@ -9,6 +9,7 @@ export default function Landing() {
             <nav className={styles.nav}>
                 <a href='#features'>Features</a>
                 <a href='#benefits'>Benefits</a>
+                <Link className={styles.login} href='/login'>Login</Link>
             </nav>
         </header>
 
@@ -112,6 +113,9 @@ export default function Landing() {
                 <img className={styles.featuresImg} src='/onlinestats.svg' />
             </section>
         </main>
+        <footer className={styles.footer}>
+            <p>Professional management for professional services.</p>
+        </footer>
         </div>
     );
 }

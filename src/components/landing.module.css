@@ -21,6 +21,11 @@
     width: 32px;
 
 }
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
 .hero {
     display: flex;
     flex-direction: column;
@@ -157,4 +162,21 @@
 }
 .feature p {
     color: rgb(78, 80, 83);
+}
+
+.footer {
+    background-color: rgb(26, 99, 195);
+    padding: 20px;
+}
+.footer p {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+.login {
+    background-color: rgb(15, 122, 210);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 600;
 }
