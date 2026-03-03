@@ -1,0 +1,28 @@
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid rgb(235, 235, 235);
+    padding: 20px;
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+.sidebar a.activeLink {
+    background-color: rgb(213, 227, 241);
+}
+.sidebar a img {
+    width: 25px;
+}
+.sidebar h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: rgb(36, 82, 134);
+    margin-bottom: 20px;
+}
