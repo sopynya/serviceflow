@@ -1,0 +1,80 @@
+.clients {
+    padding: 28px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 6px 18px 6px;
+}
+.header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.header div {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.header input {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #e4e4e7;
+    outline: none;
+    font-size: 14px;
+    width: 220px;
+    transition: all 0.2s;
+}
+.header input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+.header button {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.header button:hover {
+    background: #4f46e5;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+}
+.clientCard {
+    background: white;
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    padding: 18px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.clientCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.clientCard h2 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.clientCard p {
+    font-size: 13px;
+    color: #6b7280;
+}
+.noClients {
+    text-align: center;
+    color: #6b7280;
+    margin-top: 40px;
+}

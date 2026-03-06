@@ -15,13 +15,22 @@ export default function Sidebar() {
             console.log(err)
         })
     }, [])
+    const initials = name ? name.split(' ').map(p=>p[0]).slice(0,2).join('').toUpperCase() : '';
     return(
         <div className={styles.sidebar}>
-            <h2>{name}</h2>
-            <Link href='/dashboard' className={pathname === '/dashboard' ? styles.activeLink : ''}><img src='/chart-bar.svg' />Dashboard</Link>
-            <Link href='/orders' className={pathname === '/orders' ? styles.activeLink : ''}><img src='/clipboard-text.svg'/>Service Orders</Link>
-            <Link href='/clients' className={pathname === '/clients' ? styles.activeLink : ''}><img src='/users.svg' />Clients</Link>
-            <Link href='/technicians' className={pathname === '/technicians' ? styles.activeLink : ''}><img src='/wrench.svg' />Technicians</Link>
+            <div className={styles.brand}>
+                <div className={styles.logo}>{initials || 'CP'}</div>
+                <div>
+                    <h2>{name || 'Company'}</h2>
+                    <p className={styles.small}>Manage your workspace</p>
+                </div>
+            </div>
+            <nav className={styles.nav}>
+                <Link href='/dashboard' className={[pathname === '/dashboard' ? styles.activeLink : '', styles.navLink].join(' ')}><img src='/chart-bar.svg' />Dashboard</Link>
+                <Link href='/orders' className={[pathname === '/orders' ? styles.activeLink : '', styles.navLink].join(' ')}><img src='/clipboard-text.svg'/>Service Orders</Link>
+                <Link href='/clients' className={[pathname === '/clients' ? styles.activeLink : '', styles.navLink].join(' ')}><img src='/users.svg' />Clients</Link>
+                <Link href='/technicians' className={[pathname === '/technicians' ? styles.activeLink : '', styles.navLink].join(' ')}><img src='/wrench.svg' />Technicians</Link>
+            </nav>
         </div>
     )
 }
